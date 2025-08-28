@@ -1,0 +1,172 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explore Our Solar System</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #000428, #004e92); /* deep space blue */
+      color: #cce7ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      color: #90caf9;
+      text-shadow: 2px 2px 6px #001f4d;
+    }
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 10px auto 0;
+      color: #a9d0ff;
+      text-shadow: 1px 1px 4px #002a6f;
+    }
+    section.about {
+      max-width: 800px;
+      background: rgba(0, 30, 80, 0.7);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0073e6;
+      margin-bottom: 40px;
+      color: #d0e7ff;
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .planet-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .planet-card {
+      background: #004080;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #0073e6;
+      text-align: center;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .planet-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #1e90ff;
+    }
+    .planet-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 2px solid #a0c4ff;
+      margin-bottom: 10px;
+      background: #00264d;
+      box-shadow: inset 0 0 10px #66aaff;
+    }
+    .planet-card h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #b0d8ff;
+      text-shadow: 1px 1px 3px #003366;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #99aabb;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 500px) {
+      .planet-card img {
+        width: 80px;
+        height: 80px;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+      section.about {
+        font-size: 1em;
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Solar System Explorer</h1>
+    <p>Learn about all the planets in our solar system! Click on any planet below to discover fascinating facts and details. </p>
+  </header>
+
+  <section class="about" aria-label="About the Solar System">
+    <h2>About the Solar System</h2>
+    <p>
+      Our Solar System consists of the Sun and everything bound to it by gravity — the eight planets, their moons, dwarf planets, comets, asteroids, and countless particles of dust and gas.
+      It formed about 4.6 billion years ago from a giant rotating cloud of gas and dust called the solar nebula.
+      The planets orbit the Sun in nearly circular paths and are divided into terrestrial planets (Mercury, Venus, Earth, Mars) and gas and ice giants (Jupiter, Saturn, Uranus, Neptune).
+      Exploring these planets helps us understand the history of our cosmic neighborhood and the formation of planetary systems throughout the universe. No pluto here only plants sorry!
+    </p>
+  </section>
+
+  <section class="planet-gallery" aria-label="Planet Navigation">
+    <a href="mercury.html" class="planet-card" aria-label="Mercury">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercury" />
+      <h3>Mercury</h3>
+    </a>
+
+    <a href="venus.html" class="planet-card" aria-label="Venus">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus" />
+      <h3>Venus</h3>
+    </a>
+
+    <a href="earth.html" class="planet-card" aria-label="Earth">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth" />
+      <h3>Earth</h3>
+    </a>
+
+    <a href="mars.html" class="planet-card" aria-label="Mars">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars" />
+      <h3>Mars</h3>
+    </a>
+
+    <a href="jupiter.html" class="planet-card" aria-label="Jupiter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter" />
+      <h3>Jupiter</h3>
+    </a>
+
+    <a href="saturn.html" class="planet-card" aria-label="Saturn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn" />
+      <h3>Saturn</h3>
+    </a>
+
+    <a href="uranus.html" class="planet-card" aria-label="Uranus">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus" />
+      <h3>Uranus</h3>
+    </a>
+
+    <a href="neptune.html" class="planet-card" aria-label="Neptune">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune" />
+      <h3>Neptune</h3>
+    </a>
+  </section>
+
+  <footer>
+    Jer Playground Solar System Exploration Website, images captured by NWSA - I do not own any of the images.
+  </footer>
+</body>
+</html>
